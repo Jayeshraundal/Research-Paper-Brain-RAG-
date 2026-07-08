@@ -3,3 +3,7 @@ langchain-community
 langchain-core
 pymupdf
 pypdf
+sentence-transformers
+chromadb
+faiss-cpu
+msvc-runtime
