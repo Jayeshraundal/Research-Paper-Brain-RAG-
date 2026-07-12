@@ -7,3 +7,5 @@ sentence-transformers
 chromadb
 faiss-cpu
 msvc-runtime
+langchain-groq
+python-dotenv
