@@ -14,6 +14,9 @@ each document. It returns a list of all processed documents.
 
 
 def process_documents(doc_dir):
+
+    """Load all PDF files from a directory and return them as processed documents."""
+    
     all_documents = []
 
     input_path = Path(doc_dir)
@@ -44,10 +47,13 @@ def process_documents(doc_dir):
     print(f"Total documents processed: {len(all_documents)}")
     return all_documents  
 
-def split_documents(documents, chunk_size=1000, chunk_overlap=200):
+def split_documents(documents):
+
+    """Split long documents into smaller chunks suitable for embedding and retrieval."""
+
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=chunk_size,
-        chunk_overlap=chunk_overlap,
+        chunk_size=1000,
+        chunk_overlap=200,
         length_function=len,
         separators=["\n\n", "\n", " ", ""]
     )
