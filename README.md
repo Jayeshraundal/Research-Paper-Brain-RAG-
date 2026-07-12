@@ -15,7 +15,7 @@ This project demonstrates a basic end-to-end RAG workflow:
 
 ## Project Structure
 
-
+```text
 Research-Paper-Brain-RAG/
 ├── app.py                 # Main entry point for the project
 ├── data/
